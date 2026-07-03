@@ -1,0 +1,13 @@
+{
+  "title": "KubeMini",
+  "schemaVersion": 39,
+  "version": 1,
+  "panels": [
+    {
+      "type": "stat",
+      "title": "Running Pods",
+      "gridPos": {"x": 0, "y": 0, "w": 6, "h": 4},
+      "targets": [{"expr": "kubemini_pods_running"}]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: kubemini
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/kubemini}
+    username: ${SPRING_DATASOURCE_USERNAME:kubemini}
+    password: ${SPRING_DATASOURCE_PASSWORD:kubemini}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus,metrics
+  endpoint:
+    health:
+      probes:
+        enabled: true
+
+kubemini:
+  runtime:
+    mode: ${KUBEMINI_RUNTIME_MODE:simulated}
+  security:
+    jwt-secret: ${KUBEMINI_JWT_SECRET:local-development-secret-must-be-32-bytes}
+    token-ttl-seconds: 3600
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html

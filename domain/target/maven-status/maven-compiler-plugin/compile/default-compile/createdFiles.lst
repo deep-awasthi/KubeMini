@@ -1,0 +1,15 @@
+com/kubemini/domain/model/ProbeType.class
+com/kubemini/domain/model/Node.class
+com/kubemini/domain/model/DeploymentStatus.class
+com/kubemini/domain/model/ResourceRequirements.class
+com/kubemini/domain/model/Probe.class
+com/kubemini/domain/model/AutoScalingPolicy.class
+com/kubemini/domain/model/ServiceType.class
+com/kubemini/domain/model/KubeService.class
+com/kubemini/domain/model/PodPhase.class
+com/kubemini/domain/model/ClusterSnapshot.class
+com/kubemini/domain/model/SchedulerAlgorithm.class
+com/kubemini/domain/model/Deployment.class
+com/kubemini/domain/model/Pod.class
+com/kubemini/domain/model/ResourceQuantity.class
+com/kubemini/domain/model/NodeStatus.class
